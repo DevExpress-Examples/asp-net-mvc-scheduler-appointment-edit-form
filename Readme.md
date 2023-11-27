@@ -32,6 +32,6 @@ Below are some important points concerning the example implementation:
 
 * [How to implement a custom edit appointment form](https://github.com/DevExpress-Examples/asp-net-mvc-scheduler-custom-appointment-form)
 
-  ## Online Demo
+## Online Demo
 
 * [Scheduling - Custom Forms](https://demos.devexpress.com/MVCxSchedulerDemos/Customization/CustomForms)
