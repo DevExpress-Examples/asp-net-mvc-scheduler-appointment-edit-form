@@ -5,11 +5,11 @@
 
 # Scheduler for ASP.NET MVC - A simple implementation of an appointment edit form
 
-This example illustrates a simple implementation of custom appointment edit form. You can find the form view in the following file: [CustomAppointmentFormPartial.cshtml](./CS/Views/Home/CustomAppointmentFormPartial.cshtml).
+This example illustrates a simple implementation of a custom appointment edit form. You can find the form view in the following file: [CustomAppointmentFormPartial.cshtml](./CS/Views/Home/CustomAppointmentFormPartial.cshtml).
 
 ## Implementation Details
 
-Below are some important points concerning the example implementation:
+The following list covers important aspects of example implementation:
 
 1. The example implements the `SchedulerHelper` class that initializes Scheduler settings for its view.
 2. Pass the Scheduler settings to the corresponding overloads of [SchedulerExtension.GetAppointmentsToInsert<T>](https://docs.devexpress.com/AspNetMvc/DevExpress.Web.Mvc.SchedulerExtension.GetAppointmentsToInsert.overloads), [SchedulerExtension.GetAppointmentsToUpdate<T>](https://docs.devexpress.com/AspNetMvc/DevExpress.Web.Mvc.SchedulerExtension.GetAppointmentsToUpdate.overloads), and [SchedulerExtension.GetAppointmentsToRemove<T>](https://docs.devexpress.com/AspNetMvc/DevExpress.Web.Mvc.SchedulerExtension.GetAppointmentsToRemove.overloads) methods.
