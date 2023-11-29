@@ -1,30 +1,36 @@
 <!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128553412/14.1.3%2B)
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E4676)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+
+# Scheduler for ASP.NET MVC - A simple implementation of an appointment edit form
+
+This example illustrates a simple implementation of a custom appointment edit form. You can find the form view in the following file: [CustomAppointmentFormPartial.cshtml](./CS/Views/Home/CustomAppointmentFormPartial.cshtml).
+
+## Implementation Details
+
+The following list covers important aspects of example implementation:
+
+1. The example implements the `SchedulerHelper` class that initializes Scheduler settings for its view.
+2. Pass the Scheduler settings to the corresponding overloads of [SchedulerExtension.GetAppointmentsToInsert<T>](https://docs.devexpress.com/AspNetMvc/DevExpress.Web.Mvc.SchedulerExtension.GetAppointmentsToInsert.overloads), [SchedulerExtension.GetAppointmentsToUpdate<T>](https://docs.devexpress.com/AspNetMvc/DevExpress.Web.Mvc.SchedulerExtension.GetAppointmentsToUpdate.overloads), and [SchedulerExtension.GetAppointmentsToRemove<T>](https://docs.devexpress.com/AspNetMvc/DevExpress.Web.Mvc.SchedulerExtension.GetAppointmentsToRemove.overloads) methods.
+3. The [Scheduler](https://docs.devexpress.com/AspNetMvc/11431/components/scheduler) extension should be defined in a separate Partial View ([SchedulerPartial.cshtml](./CS/Views/Home/SchedulerPartial.cshtml)).
+
+## Files to Review
 
 * [SchedulerHelper.cs](./CS/Code/SchedulerHelper.cs) (VB: [SchedulerHelper.vb](./VB/Code/SchedulerHelper.vb))
 * [HomeController.cs](./CS/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/Controllers/HomeController.vb))
-* [Global.asax](./CS/Global.asax) (VB: [Global.asax](./VB/Global.asax))
-* [Global.asax.cs](./CS/Global.asax.cs) (VB: [Global.asax.vb](./VB/Global.asax.vb))
-* [CustomAppointmentTemplateContainer.cs](./CS/Models/CustomAppointmentTemplateContainer.cs) (VB: [CustomAppointmentTemplateContainer.vb](./VB/Models/CustomAppointmentTemplateContainer.vb))
-* [Scheduling.cs](./CS/Models/Scheduling.cs) (VB: [Scheduling.vb](./VB/Models/Scheduling.vb))
-* [ValidationSchedule.cs](./CS/Models/ValidationSchedule.cs) (VB: [ValidationSchedule.vb](./VB/Models/ValidationSchedule.vb))
-<!-- default file list end -->
-# MVC Scheduler: Simplest implementation of an appointment editing form
+* [SchedulerPartial.cshtml](./CS/Views/Home/SchedulerPartial.cshtml) (VB: [SchedulerPartial.vbhtml](./VB/Views/Home/SchedulerPartial.vbhtml))
+* [CustomAppointmentFormPartial.cshtml](./CS/Views/Home/CustomAppointmentFormPartial.cshtml) (VB: [CustomAppointmentFormPartial.vbhtml](./VB/Views/Home/CustomAppointmentFormPartial.vbhtml))
 
+## Documentation
 
-<p>This example illustrates the simplest possible implementation of custom appointment editing form. This form in our example is defined in the <strong>~/Home/CustomAppointmentFormPartial.cshtml</strong> view and has only several fields:</p><p></p><p>- Subject, Start, and End regular attributes;</p><p>- Price custom field,</p><p></p><p>Other features are skipped/disabled for the sake of clarity.</p><p></p><p>Here are some important points concerning the implementation:</p><p></p><p>a) We use the <strong>SchedulerHelper </strong>class to initialize Scheduler settings for its view. This class has the following extension method that allows you to utilize it in the view's code:</p><p></p>
+* [Use Scheduler in Complex Views](https://docs.devexpress.com/AspNetMvc/11629/components/scheduler/get-started/lesson-3-use-scheduler-in-complex-views)
+* [Callback-Based Functionality](https://docs.devexpress.com/AspNetMvc/9052/common-features/callback-based-functionality)
 
-```cs
-public static SchedulerSettings CreateSchedulerSettings(this HtmlHelper htmlHelper)
-```
+## More Examples
 
-<p></p><p>Note that the <strong>RenderPartial()</strong> and <strong>ViewData </strong>members of an <a href="http://msdn.microsoft.com/en-us/library/system.web.mvc.htmlhelper(v=vs.108).aspx">HtmlHelper Class</a> instance are used to render a custom form and pass parameters to it respectively.</p><p></p><p>b) Scheduler settings are passed to <strong>SchedulerExtension.GetAppointmentTo*()</strong> methods according to the <a href="http://documentation.devexpress.com/#AspNet/CustomDocument11629">Lesson 3 - Use Scheduler in Complex Views</a> help section.</p><p></p><p>c) As usual, the Scheduler is rendered in a separate partial view. Refer to the <a href="http://documentation.devexpress.com/#AspNet/CustomDocument9052">ASP.NET MVC Extensions > Common Concepts > Using Callbacks</a> help section to see why it is important.</p><p></p><p><strong>See Also:</strong></p><p><a href="http://demos.devexpress.com/MVC/Scheduler/CustomForms">Scheduler - Custom Forms</a></p><p><a href="https://www.devexpress.com/Support/Center/p/E4520">Scheduler - How to implement a custom Edit Appointment Form with custom fields</a></p>
+* [How to implement a custom edit appointment form](https://github.com/DevExpress-Examples/asp-net-mvc-scheduler-custom-appointment-form)
 
-<br/>
+## Online Demo
 
-
+* [Scheduling - Custom Forms](https://demos.devexpress.com/MVCxSchedulerDemos/Customization/CustomForms)
