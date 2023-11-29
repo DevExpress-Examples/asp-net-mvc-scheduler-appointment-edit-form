@@ -1,1 +1,1 @@
-<%@ Application Codebehind="Global.asax.vb" Inherits="SchedulerSimpleCustomFormMvc.MvcApplication" Language="vb" %>
+<%@ Application Codebehind="Global.asax.vb" Inherits="SchedulerSimpleCustomFormMvc.MvcApplication" Language="VB" %>
