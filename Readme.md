@@ -20,8 +20,8 @@ The following list covers important aspects of example implementation:
 
 * [SchedulerHelper.cs](./CS/Code/SchedulerHelper.cs) (VB: [SchedulerHelper.vb](./VB/Code/SchedulerHelper.vb))
 * [HomeController.cs](./CS/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/Controllers/HomeController.vb))
-* [SchedulerPartial.cshtml](./CS/Views/Home/SchedulerPartial.cshtml) (VB: [SchedulerPartial.vbhtml](./VB/Views/Home/SchedulerPartial.vbhtml))
-* [CustomAppointmentFormPartial.cshtml](./CS/Views/Home/CustomAppointmentFormPartial.cshtml) (VB: [CustomAppointmentFormPartial.vbhtml](./VB/Views/Home/CustomAppointmentFormPartial.vbhtml))
+* [SchedulerPartial.cshtml](./CS/Views/Home/SchedulerPartial.cshtml)
+* [CustomAppointmentFormPartial.cshtml](./CS/Views/Home/CustomAppointmentFormPartial.cshtml)
 
 ## Documentation
 
